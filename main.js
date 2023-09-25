@@ -37,9 +37,15 @@ imageContainer.innerHTML = "";
         }); 
         
         loadingContainer.classList.add('hidden')
+
         
         
     }catch(error){
+        loadingContainer.classList.add('hidden')
+        const imgPlaceholder= document.createElement('div');
+        imageContainer.append(imgPlaceholder);
+        imgPlaceholder.innerText="API request failed";
+        imgPlaceholder.classList.add('p-2','font-poppins', 'text-3xl', 'text-[#494848]')
         console.log(error);
         
     }
