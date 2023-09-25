@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Document</title>
+</head>
+<body class="m-0 p-0" style="
+                            background-image: url('img/background.png');
+                            background-repeat: no-repeat;
+                            background-attachment: fixed;">
+
+    
+    
+<div class="alertMsg absolute rounded-md top-5 left-5 px-6 py-5 text-base font-medium font-roboto bg-[#dc3545] text-white hidden" role="alert">
+    You're offline. Check your Connection!
+</div>
+        <div class="flex flex-col items-center justify-center mt-32"> 
+            <p class="text-6xl font-poppins font-bold text-[#494848] "> AI IMAGE GENERATOR </p>
+            <div class="mt-10 flex justify-between align-middle gap-4  bg-[#F6F6F6] border-[#F3F3F3] w-[32rem] text-[#939393] p-3 shadow-md rounded-md">
+                <img src="img/ai.png"/>
+                <input type="text" placeholder="Type something..." dir="auto" class="inputElement w-full text-2xl font-medium placeholder:text-lg placeholder:font-medium placeholder:text-[#939393] bg-[#F6F6F6] placeholder:font-poppins placeholder:capitalize focus:outline-none">
+                <button class="drawBtn fa-solid fa-xl fa-pen align-middle"></button>
+            </div>
+            <div class="imageContainer mt-10 flex flex-wrap -mx-4 bg-[#F6F6F6] rounded-md shadow-md">
+               
+            </div>
+            <div id="loading-container" class="p-2 rounded-md bg-white hidden shadow-md">
+                <img src="img/loading.svg"/>
+            </div>
+        </div>
+        
+
+
+    <script src="https://kit.fontawesome.com/cc60ff0d42.js" crossorigin="anonymous"></script>  
+    <script src="main.js"/>
+</body>
+</html>
